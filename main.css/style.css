@@ -20,8 +20,8 @@ body {
 
 /* Header styles */
 header {
-  background-color: #333;
-  color: #fff;
+  background-color:#05c6bd;
+  color: #000000;
   padding: 10px 0;
 }
 
@@ -30,10 +30,21 @@ header {
   align-items: center;
 }
 
+#account {
+  display: grid;
+  margin-left: 30%;
+  grid-template-columns:40% 60%;
+  justify-content: space-between;
+  max-width: 100%;
+}
+
 #menu {
   list-style: none;
   margin-right: auto; /* Pushes the menu to the far left */
   justify-content: flex-end;
+  display: grid;
+  width: 100%;
+  grid-template-columns:20% 20% 20% 20% 20%
 }
 
 #menu li {
@@ -46,7 +57,7 @@ header {
 }
 
 #menu ul {
-  display: none;
+  display: inline;
   position: absolute;
   background-color: #fff;
   padding: 10px;
@@ -56,15 +67,43 @@ header {
   left: 0;
 }
 
-#location,
-#cart,
-#avatar {
-  margin-top: 10px;
-  padding: 5px 10px;
-  border: 1px solid #fff;
-  border-radius: 5px;
-  margin-right: 10px; /* Adjust as needed */
+
+.top input[type=search] {
+  float: right;
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+  width:100%;
+  }
+
+  button  {
+  float: right;
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px
+  }
+
+#nav {
+  display: grid;
+  width: 100%;
+  grid-template-columns:70% 30%
 }
+
+#location {
+  margin-top: 2%;
+  justify-content: center;
+  width: 80%
+}
+
+form {
+  justify-content: center;
+  width: 100%;
+}
+
 
 #cart img,
 #avatar img {
@@ -84,8 +123,8 @@ main {
 }
 
 #promo,
-#categories,
-#menu {
+#categories
+{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px;
@@ -110,8 +149,8 @@ main {
 
 /* Footer styles */
 footer {
-  background-color: #333;
-  color: #fff;
+  background-color: #05c6bd;
+  color: #000000;
   padding: 20px 0;
   text-align: center;
 }
@@ -120,30 +159,3 @@ footer div {
   margin-bottom: 10px;
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .top {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  #menu {
-    margin-top: 10px;
-    justify-content: center;
-  }
-  #menu li {
-    margin: 0 10px;
-  }
-  #heroImage {
-    height: 200px;
-  }
-  #promo,
-  #categories,
-  #menu {
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  }
-  #promo div,
-  #categories img,
-  #menu div {
-    height: 150px;
-  }
-}
