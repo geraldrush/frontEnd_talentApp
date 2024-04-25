@@ -25,6 +25,11 @@ header {
   padding: 10px 0;
 }
 
+h3 {
+  margin-bottom: 10px;
+  margin-top: 30px; ;
+}
+
 .top {
   display: flex;
   align-items: center;
@@ -112,14 +117,49 @@ form {
 }
 
 /* Main styles */
+
+.cardImg {
+  max-width: 100%;
+}
+
+.categoryImg{
+  display: inline-flex;
+  justify-content: space-evenly;
+  overflow-x: scroll;
+  flex-wrap: nowrap;
+}
+
+
+.categoryImg figcaption {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.catIcons{
+  
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+.subhead{
+  text-decoration: #05c6bd;
+}
+
 main {
   padding: 20px 0;
+}
+
+#categories img {
+  border-radius: 50%;
+  
 }
 
 #heroImage {
   background-image: url('path/to/hero-image.jpg');
   background-size: cover;
   height: 300px; /* Adjust as needed */
+  margin-bottom: 10%;
 }
 
 #promo,
@@ -140,7 +180,6 @@ main {
 }
 
 #promo div,
-#categories img,
 #menu div {
   background-color: #fff;
   height: 200px; /* Adjust as needed */
