@@ -6,8 +6,9 @@
     }
 
     .categoryImg{
-      display: inline-flex;
-      justify-content: space-evenly;
+      display: -ms-inline-grid;
+      grid-column: 1;
+      justify-content: space-around;
       overflow-x: scroll;
       flex-wrap: nowrap;
     }
